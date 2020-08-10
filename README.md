@@ -3,9 +3,12 @@
 ### Inspired from https://github.com/dreadlocked/Drupalgeddon2
 - - -
 
-## Drupal v8.x
-
-_Tested on Drupal v8.4.5 / v8.5.0_
+Supports:
+- Drupal **< 8.3.9** / **< 8.4.6** / **< 8.5.1** ~ `user/register` URL, attacking `account/mail` & `#post_render` parameter, using PHP's `passthru` function
+- [Pending] [Yet to be Coded] Drupal **< 7.58** ~ `user/password` URL, attacking `triggering_element_name` form & `#post_render` parameter, using PHP's `passthru` function
+- Works with **direct commands** (aka File-Less Method) or writes a **PHP shell** to the web root (`./`) or sub-directories (`./sites/default/` & `./sites/default/files/`)
+- Support **Linux** targets
+- **Auto detects Drupal version** _(or takes a good guess!)_
 
 
 ### PoC #1 - #post_render / account/mail / exec
